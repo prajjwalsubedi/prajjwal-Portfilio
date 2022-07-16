@@ -1,0 +1,203 @@
+:root {
+    --main: #4420ba;
+    --secondary: #980691;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+/* Start of navbar */
+.logo-nav {
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: underline overline var(--secondary);
+    color:#6244C5;
+    background-color: white;
+    margin-bottom: 0px;
+}
+
+.nav-dot {
+    font-weight: bolder;
+    color: red;
+    background-color: white;
+}
+
+.nav-menu li a {
+    color: #3e3d3d;
+    background-color: white;
+}
+
+.nav-menu li a:hover {
+    color: #3e3d3d;
+    text-decoration: underline;
+    background-color: white;
+}
+
+.nav-menu li a:active {
+    color: #3e3d3d;
+    text-decoration: underline black;
+    
+}
+
+.nav-button {
+    border: 2px solid var(--secondary);
+    border-radius: 18px;
+    text-decoration: none;
+    color: var(--main);
+    padding:  10px 32px 10px 32px;
+    background-color: white;
+    float: left;
+}
+
+.mbl-menu-bar {
+    display: none;
+}
+
+/* mobile navbar */
+.mbl-bar{
+    border: 2px solid white;
+    width: 30px;
+    border-radius: 18px;
+    background-color: black;
+    padding-bottom: 2px;
+    display: none;
+    flex-direction: column;
+}
+@media (max-width: 878px) {
+
+    .logo-link {
+        float: left;
+        margin-left: 2px!important;
+    }
+    .menu-mbl {
+        display: flex;        
+    }
+    .nav-button {
+        display: none;
+    }
+    
+}
+@media (max-width: 768px) {
+    .logo-nav {
+        display: block;
+    }
+    .logo-link {
+        float: left;
+        margin-left: 2px!important;
+    }
+    
+    .menu-mbl {
+        display: block;
+        flex-direction: column;        
+    }
+    .menu-menu {
+        display: block;
+        flex-direction: column;
+    }
+    .nav-button {
+        display: none;
+    }
+    .mbl-bar {
+        display: block;
+    }
+    .mbl-menu-bar {
+        display: contents;
+    }
+    .mbl-menu-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+}
+ /* end of NavBar */
+
+/* starts Home CSS */
+.home {
+    padding: 1% 5% 0 11%;
+}
+
+.home-myname {
+    padding-top: 16%;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.home-dash {
+    margin: 3px 0 2.8em 3%;
+    letter-spacing: -4px;    
+}
+
+.home-position {
+    font-size: 22px;
+    padding-bottom: 2.8em;
+    letter-spacing: 0px;
+    padding-left: 20px;
+    overflow-wrap: anywhere;
+}
+
+.home-description {
+    padding: 0 50% 2em 0;
+    text-align: left;
+}
+
+.home-hello {
+    background-color: var(--main);
+    border: 2px solid var(--secondary);
+    border-radius: 18px;
+    text-decoration: none;
+    color: white;
+    padding:  10px 32px 10px 32px;
+    margin: 0 0 2px 0;
+}
+
+.home-email {
+    font-size: 22px;
+    padding: 4px 0 0 4px;
+}
+
+.home-my-works {
+    background-color: white;
+    border: 2px solid var(--secondary);
+    border-radius: 18px;
+    text-decoration: none;
+    color: var(--main);
+    padding:  10px 32px 10px 32px;
+    margin: 2px 0 0 0;
+}
+
+.home-hello:hover, .home-my-works:hover{
+    background-color: var(--secondary);
+    border: 2px solid var(--main);
+    color: white;
+}
+
+.home-arrow {
+    font-size: 22px;
+    padding: 4px 0 0 4px;
+}
+
+.home-social-list {
+    display: flex;
+    padding-top: 3em;
+}
+
+.home li{
+    list-style: none;
+    text-align-last: start;
+    padding-top: 1.8em;
+    padding-right: 1em;
+}
+.home-follow {
+    font-size: 22px;
+}
+
+.home-image {
+    max-width: 45%;
+    max-height: auto;
+    float:right;
+    margin-top:0px;
+    z-index: -1;
+}
