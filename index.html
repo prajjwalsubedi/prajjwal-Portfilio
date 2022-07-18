@@ -3,19 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Prajjwal Subedi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
   <link rel="stylesheet" href="static/css/style.css">
     <title>Prajjwal Subedi</title>
 </head>
 <body>
-    <!-- Starts NavBar -->
-    <div class="container-fluid  bg-white">
-        <header class="col-md-auto d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1 mb-1 nav-menu ">
-          <a href="/" class="navbar-brand col-md-auto ms-auto logo-link align-items-center">
+  <!-- Starts NavBar -->
+  <div class="container-fluid  bg-white">
+      <header class="col-md-auto flex-wrap justify-content-center justify-content-md-between py-1 mb-1 nav-menu ">
+        <div class="nav-bar-logo-menu flex-wrap">
+        <a href="/" class="navbar-brand col-md-auto ms-auto logo-link align-items-center">
             <p class="logo-nav"> Prajjwal<span class="nav-dot">.</span></p>
           </a>
-          <ul class="nav col-8 col-md-auto mx-auto mb-4 justify-content-center mb-md-0 menu-mbl">
+          <ul id="menu-mbl" class="nav col-8 col-md-auto mx-auto mb-4 justify-content-center mb-md-0 menu-mbl">
             <li><a href="#" class="nav-link px-4 menua">Home</a></li>
             <li><a href="#" class="nav-link px-4 menua">About</a></li>
             <li><a href="#" class="nav-link px-4 menua">Service</a></li>
@@ -26,40 +29,297 @@
           <div class="col-md-auto ms-auto text-end align-items-center">
             <button class="nav-button col-md-auto me-auto">Hire me</button>
           </div>
-          <div class="col-md-auto ms-auto text-end align-items-center">
-            <button  onclick="document.getElementById('menu-mbl').style.display='block';" class="col-md-auto ms-auto mbl-menu-bar">
-              <i class="fa fa-bars mbl-bar"></i>
-              <i class="fa fa-bars mbl-bar"></i>
-              <i class="fa fa-bars mbl-bar"></i>
-            </button>
-          </div> 
-        </header>
-        
+        </div>
+        <div type="button" class="col-md-auto ms-auto text-end align-items-center nav-bar">
+          <button onclick="navBarFunction()" class="col-md-auto ms-auto mbl-menu-bar" id="mbl-menu-bar">
+            <i class=" mbl-bar fa fa-bars"></i>
+          </button>
+          <button type="button" onclick="navBarCloseFunction()" class="btn-close nav-close" id="nav-close" aria-label="Close"></button>
+        </div> 
+      </header>        
+    </div>
+  <!-- End NavBar -->
+<!-- Start Home Page -->
+    <div class="home container-3">
+      <img src="static/images/prajjwal.png" alt="Prajjwal Subedi" class="home-image">
+      <H1  class="home-myname">Prajjwal&nbspSubedi<span class="nav-dot">.🖖</H1>
+      <p class="home-dash">-------------------------------<span class="home-position">Web&nbspDeveloper</span></p>
+      <p class="home-description">I'm creative designer based in New York, and I'm very passionate and dedicated to my work.</p>
+      <button class="home-hello">Say Hello<span class="home-email">➢</span></button>
+      <button class="home-my-works">My Works <span class="home-arrow">↗</span></button>
+
+      <ul class="home-social-list">
+        <li class="home-follow">Follow&nbspme:</li>
+        <li><a href="https://www.facebook.com/prajjwalsubedi95/"><img src="static/images/social/facebook.png" alt="facebook logo" height="50px" width="50px"></a></li>
+        <li><a href="https://www.facebook.com/prajjwalsubedi95/"><img src="static/images/social/twitter.png" alt="twitter logo" height="50px" width="50px"></a></li>
+        <li><a href="https://www.facebook.com/prajjwalsubedi95/"><img src="static/images/social/instagram.png" alt="instagram logo"  height="50px" width="50px"></a></li>
+        <li><a href="https://www.facebook.com/prajjwalsubedi95/"><img src="static/images/social/github.png" alt="github logo" height="50px" width="50px"></a></li>
+        <li><a href="https://www.facebook.com/prajjwalsubedi95/"><img src="static/images/social/linkedin.png" alt="linkedin logo" height="50px" width="50px"></a></li>
+        <li><a href="https://www.facebook.com/prajjwalsubedi95/"><img src="static/images/social/skype.png" alt="skype logo" height="50px" width="50px"></a></li>    
+      </ul>
+    </div>
+<!-- End Home Page -->
+<!-- Start About page -->
+    <div class="about container">
+      <div class="row">
+        <div class="col-5 about-col">
+          <h1 class="about-year">10</h1>
+          <p class="about-experience">Years of Experience</p>
+          <p class="about-name">Prajjwal</p>
+        </div>
+        <div class="col-7"> 
+          <p class="about-about">About&nbspMe<span class="about-dash">-------------------------</span></p>
+          <p class="about-detail">With 10 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+          <div>
+            <button class="about-cv">Download CV<span class="about-cv-logo">📄</span></button>
+            <img src="static/images/prajjwal_sign.png" alt="Prajjwal Sign" height="110px" width="300px">
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <p class="about-expert">My Expert Areas<span class="about-dash">--------------------------</span></p>
+          <p class="expert-detail">You can express yourself however you want and whenever you want, for free. You can customize a template or make your own from scratch, with an immersive library at your disposal. You can express yourself however you want and whenever you free.
+            <br>
+            You can customize a template or make your own from scratch, with an immersive library at your disposal.</p>
+          <div>
+            <button class="about-cv">Download CV<span class="about-cv-logo">📄</span></button>
+        </div>
+        </div>
+        <div class="col-7"> 
+          <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+            <li class="nav-item tab-btn" role="presentation">
+              <button class="about-tabs" id="pills-skills-tab" data-bs-toggle="pill" data-bs-target="#pills-skills" type="button" role="tab" aria-controls="pills-skills" aria-selected="true">Skills</button>
+            </li>
+            <li class="nav-item tab-btn" role="presentation">
+              <button class="about-tabs " id="pills-experience-tab" data-bs-toggle="pill" data-bs-target="#pills-experience" type="button" role="tab" aria-controls="pills-experience" aria-selected="false">Experience</button>
+            </li>
+            <li class="nav-item tab-btn" role="presentation">
+              <button class="about-tabs " id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education" type="button" role="tab" aria-controls="pills-education" aria-selected="false">Education</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab">
+              <div class="container"> 
+                <div class="row">
+                  <div class="col-4 about-card">
+                    <span class="about-card-top"><span class="about-card-top-in"> <span class="about-icon">
+                      <i class="fa-brands fa-html5"></i>
+                    </span></span></span>
+                    <div class="progress">
+                      <div class="progress-bar about-progress-percentage" role="progressbar" style="width:90%"></div>
+                    </div>
+                    <p class="about-card-title">HTML<span class="card-percentage">(90%)</span></p>
+                  </div>
+                  <div class="col-4 about-card">
+                    <span class="about-card-top"><span class="about-card-top-in"> <span class="about-icon">
+                      <i class="fa-brands fa-css3"></i>
+                    </span></span></span>
+                    <div class="progress">
+                      <div class="progress-bar about-progress-percentage" role="progressbar" style="width:60%"></div>
+                    </div>
+                    <p class="about-card-title">CSS<span class="card-percentage">(60%)</span></p>
+                  </div>
+                  <div class="col-4 about-card">
+                    <span class="about-card-top"><span class="about-card-top-in"> <span class="about-icon">
+                      <i class="fa-brands fa-js"></i>
+                    </span></span></span>
+                    <div class="progress">
+                      <div class="progress-bar about-progress-percentage" role="progressbar" style="width:50%"></div>
+                    </div>
+                    <p class="about-card-title">Java Script<span class="card-percentage">(50%)</span></p>
+                  </div>              
+                  <div class="col-4 about-card">
+                    <span class="about-card-top"><span class="about-card-top-in"> <span class="about-icon">
+                      <i class="fa-brands fa-python"></i>
+                    </span></span></span>
+                    <div class="progress">
+                      <div class="progress-bar about-progress-percentage" role="progressbar" style="width:90%"></div>
+                    </div>
+                    <p class="about-card-title">Python<span class="card-percentage">(90%)</span></p>
+                  </div>
+                  <div class="col-4 about-card">
+                    <span class="about-card-top"><span class="about-card-top-in"> <span class="about-icon">
+                      <i class="fa-solid fa-guitar"></i>
+                    </span></span></span>
+                    <div class="progress">
+                      <div class="progress-bar about-progress-percentage" role="progressbar" style="width:90%"></div>
+                    </div>
+                    <p class="about-card-title">Django<span class="card-percentage">(90%)</span></p>
+                  </div>
+                  <div class="col-4 about-card">
+                    <span class="about-card-top"><span class="about-card-top-in"> <span class="about-icon">
+                      <i class="fa-brands fa-docker"></i>
+                    </span></span></span>
+                    <div class="progress">
+                      <div class="progress-bar about-progress-percentage" role="progressbar" style="width:70%"></div>
+                    </div>
+                    <p class="about-card-title">Docker<span class="card-percentage">(70%)</span></p>
+                  </div>
+                  <div class="col-4 about-card">
+                    <span class="about-card-top"><span class="about-card-top-in"> <span class="about-icon">
+                      <i class="fa-brands fa-github"></i>
+                    </span></span></span>
+                    <div class="progress">
+                      <div class="progress-bar about-progress-percentage" role="progressbar" style="width:90%"></div>
+                    </div>
+                    <p class="about-card-title">Github<span class="card-percentage">(90%)</span></p>
+                  </div>
+                  <div class="col-4 about-card">
+                    <span class="about-card-top"><span class="about-card-top-in"> <span class="about-icon">
+                      <i class="fa-brands fa-microsoft"></i>
+                    </span></span></span>
+                    <div class="progress">
+                      <div class="progress-bar about-progress-percentage" role="progressbar" style="width:90%"></div>
+                    </div>
+                    <p class="about-card-title">Microsoft 365<span class="card-percentage">(90%)</span></p>
+                  </div>
+                  <div class="col-4 about-card">
+                    <span class="about-card-top"><span class="about-card-top-in"> <span class="about-icon">
+                      <i class="fas fa-database"></i>
+                    </span></span></span>
+                    <div class="progress">
+                      <div class="progress-bar about-progress-percentage" role="progressbar" style="width:90%"></div>
+                    </div>
+                    <p class="about-card-title">My SQL<span class="card-percentage">(90%)</span></p>
+                  </div>
+                </div>
+              </div>   
+            </div>
+            <div class="tab-pane fade show active" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab">
+              <div class="container"> 
+                <div class="row">
+                  <div class="col-6 about-card">
+                    <p class="exp-date">2022 - Present</p>
+                    <p class="exp-company">Sideguru It Solutions</p>
+                    <p class="exp-dash">-------------------</p>
+                    <p class="exp-position">Backend Developer</p>
+                  </div>
+                  <div class="col-6 about-card">
+                    <p class="exp-date">2021 - Present</p>
+                    <p class="exp-company">Logic Accountants Pty Ltd</p>
+                    <p class="exp-dash">-------------------</p>
+                    <p class="exp-position">Tax Consultant</p>
+                  </div>
+                  <div class="col-6 about-card">
+                    <p class="exp-date">2019 - 2021</p>
+                    <p class="exp-company">Opal Aged Care</p>
+                    <p class="exp-dash">-------------------</p>
+                    <p class="exp-position">Laundry Sueprvisor</p>
+                  </div>
+                  <div class="col-6 about-card">
+                    <p class="exp-date">2017 - 2019</p>
+                    <p class="exp-company">Opal Aged Care</p>
+                    <p class="exp-dash">-------------------</p>
+                    <p class="exp-position">Laundry Attendent</p>
+                  </div>
+                </div>
+              </div>   
+            </div>
+            <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab">
+              <div class="container"> 
+                <div class="row">
+                  <div class="col-6 about-card">
+                    <p class="exp-date">2022 - Present</p>
+                    <p class="exp-company">Sideguru It Solutions</p>
+                    <p class="exp-dash">-------------------</p>
+                    <p class="exp-position">Backend Developer</p>
+                  </div>
+                  <div class="col-6 about-card">
+                    <p class="exp-date">2021 - Present</p>
+                    <p class="exp-company">Logic Accountants Pty Ltd</p>
+                    <p class="exp-dash">-------------------</p>
+                    <p class="exp-position">Tax Consultant</p>
+                  </div>
+                  <div class="col-6 about-card">
+                    <p class="exp-date">2019 - 2021</p>
+                    <p class="exp-company">Opal Aged Care</p>
+                    <p class="exp-dash">-------------------</p>
+                    <p class="exp-position">Laundry Sueprvisor</p>
+                  </div>
+                  <div class="col-6 about-card">
+                    <p class="exp-date">2017 - 2019</p>
+                    <p class="exp-company">Opal Aged Care</p>
+                    <p class="exp-dash">-------------------</p>
+                    <p class="exp-position">Laundry Attendent</p>
+                  </div>
+                </div>
+              </div> 
+            </div>  
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container counter"> 
+      <div class="row">
+        <div class="col-3">
+          <h1 class="about-round"><span class="about-count">202</span></h1>
+          <p class="about-count-title">Backend Developer</p>
+        </div>
         
       </div>
-    <!-- End NavBar -->
-<!-- Start Home Page -->
-<div class="home container-3">
-  <img src="static/images/prajjwal.png" alt="Prajjwal Subedi" class="home-image">
-  <H1  class="home-myname">Prajjwal&nbspSubedi<span class="nav-dot">.</span> &nbsp<span class="home-hand">🖖</span></H1>
-  <p class="home-dash">-------------------------------<span class="home-position">Web&nbspDeveloper</span></p>
-  <p class="home-description">I'm creative designer based in New York, and I'm very passionate and dedicated to my work.</p>
-  <button class="home-hello">Say Hello<span class="home-email">➢</span></button>
-  <button class="home-my-works">My Works <span class="home-arrow">↗</span></button>
+    </div>
 
-  <ul class="home-social-list">
-    <li class="home-follow">Follow me:</li>
-    <li><a href="https://www.facebook.com/prajjwalsubedi95/"><img src="static/images/social/facebook.png" alt="facebook logo" height="50px" width="50px"></a></li>
-    <li><a href="https://www.facebook.com/prajjwalsubedi95/"><img src="static/images/social/twitter.png" alt="twitter logo" height="50px" width="50px"></a></li>
-    <li><a href="https://www.facebook.com/prajjwalsubedi95/"><img src="static/images/social/instagram.png" alt="instagram logo"  height="50px" width="50px"></a></li>
-    <li><a href="https://www.facebook.com/prajjwalsubedi95/"><img src="static/images/social/github.png" alt="github logo" height="50px" width="50px"></a></li>
-    <li><a href="https://www.facebook.com/prajjwalsubedi95/"><img src="static/images/social/linkedin.png" alt="linkedin logo" height="50px" width="50px"></a></li>
-    <li><a href="https://www.facebook.com/prajjwalsubedi95/"><img src="static/images/social/skype.png" alt="skype logo" height="50px" width="50px"></a></li>    
-  </ul>
+<!-- End About Page -->
+<!-- start  contact page-->
+<div class="container contact">
+  <div class="row">
+    <div class="col">
+      <form class="row g-3 contact-form-col">
+        <div class="col-12 form-group">
+         <p class="contact-me">Contact Me:</p>
+         <hr style="color:white; ">
+        </div>
+        <div class="col-md-6">
+          <label for="inputFname" class="form-label">First Name</label>
+          <input type="fname" class="form-control" id="inputFname">
+        </div>
+        <div class="col-md-6">
+          <label for="inputLname" class="form-label">Last Name</label>
+          <input type="lname" class="form-control" id="inputLname">
+        </div>
+        <div class="col-12 form-group">
+          <label for="inputMessage" class="form-label">Message</label>
+          <textarea type="text" class="form-control" id="inputMessage" rows="4" placeholder="Please type your message here..."></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="about-cv btn-message">Send Message</button>
+        </div>
+      </form>
+    </div>
+    <div class="col">
+      <h2 class="contact-head">Let's work together</h2>
+      <p class="contact-paragraph">You can express yourself however you want and whenever you want, for free. You can customize a template or make your own.</p>
+      <button class="home-hello">Say Hello<span class="home-email">➢</span></button>
+    </div>
+    <div class="col">
+      Column
+    </div>
+  </div>
 </div>
 
+<!-- End  contact page-->
 
-<script> src="static/js/index.js" </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+
+    <script> src="static/js/index.js"</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script>
+    function navBarFunction() {
+      document.getElementById('menu-mbl').style.display='flex';
+      document.getElementById('nav-close').style.display='flex';    
+      document.getElementById('mbl-menu-bar').style.display='none';    
+    }
+    function navBarCloseFunction() {
+      document.getElementById('menu-mbl').style.display='none';
+      document.getElementById('nav-close').style.display='none';    
+      document.getElementById('mbl-menu-bar').style.display='contents';    
+    }
+  </script>
+  </body>
 </html>
