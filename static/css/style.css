@@ -32,6 +32,9 @@
     text-decoration: underline;
 }
 
+.nav-menu li a:active {
+    color: #3e3d3d;
+    text-decoration: underline black;
     
 }
 
