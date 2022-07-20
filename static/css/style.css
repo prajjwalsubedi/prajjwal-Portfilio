@@ -23,21 +23,6 @@
     color: red;
 }
 
-/* .nav-menu li a {
-    color: #3e3d3d;
-/* } */
-
-.nav-menu li a:hover {
-    color: #3e3d3d;
-    text-decoration: underline;
-}
-
-.nav-menu li a:active {
-    color: #3e3d3d;
-    text-decoration: underline black;
-    
-} */
-
 .nav-button {
     border: 2px solid var(--secondary);
     border-radius: 18px;
