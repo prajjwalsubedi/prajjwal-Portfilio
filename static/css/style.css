@@ -23,7 +23,7 @@
     color: red;
 }
 
-.nav-menu li a {
+/* .nav-menu li a {
     color: #3e3d3d;
 }
 
@@ -36,7 +36,7 @@
     color: #3e3d3d;
     text-decoration: underline black;
     
-}
+} */
 
 .nav-button {
     border: 2px solid var(--secondary);
