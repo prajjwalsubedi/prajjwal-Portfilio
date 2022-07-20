@@ -11,24 +11,25 @@
     <title>Prajjwal Subedi</title>
 </head>
 <body>
-  <!-- Starts NavBar -->
-  <div class="container-fluid  bg-white">
-      <header class="col-md-auto flex-wrap justify-content-center justify-content-md-between py-1 mb-1 nav-menu ">
-        <div class="nav-bar-logo-menu flex-wrap">
-        <a href="/" class="navbar-brand col-md-auto ms-auto logo-link align-items-center">
-            <p class="logo-nav"> Prajjwal<span class="nav-dot">.</span></p>
-          </a>
-          <ul id="menu-mbl" class="nav col-8 col-md-auto mx-auto mb-4 justify-content-center mb-md-0 menu-mbl">
-            <li><a href="#" class="nav-link px-4 menua">Home</a></li>
-            <li><a href="#" class="nav-link px-4 menua">About</a></li>
-            <li><a href="#" class="nav-link px-4 menua">Service</a></li>
-            <li><a href="#" class="nav-link px-4 menua">Portfilio</a></li>
-            <li><a href="#" class="nav-link px-4 menua">Blog</a></li>
-            <li><a href="#" class="nav-link px-4 menua">Contact</a></li>
-          </ul>
-          <div class="col-md-auto ms-auto text-end align-items-center">
-            <button class="nav-button col-md-auto me-auto">Hire me</button>
-          </div>
+<!-- Starts NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="/" class="navbar-brand">
+      <p class="logo-nav"> Prajjwal<span class="nav-dot">.</span></p>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul id="menu-mbl" class="nav col-8 col-md-auto mx-auto mb-4 justify-content-center mb-md-0 menu-mbl">
+        <li><a href="#" class="nav-link px-4 menua">Home</a></li>
+        <li><a href="#" class="nav-link px-4 menua">About</a></li>
+        <li><a href="#" class="nav-link px-4 menua">Service</a></li>
+        <li><a href="#" class="nav-link px-4 menua">Portfilio</a></li>
+        <li><a href="#" class="nav-link px-4 menua">Blog</a></li>
+        <li><a href="#" class="nav-link px-4 menua">Contact</a></li>
+      </ul>
+        <div class="col-md-auto ms-auto text-end align-items-center">
+          <button class="nav-button col-md-auto me-auto">Hire me</button>
         </div>
         <div type="button" class="col-md-auto ms-auto text-end align-items-center nav-bar">
           <button onclick="navBarFunction()" class="col-md-auto ms-auto mbl-menu-bar" id="mbl-menu-bar">
@@ -36,9 +37,9 @@
           </button>
           <button type="button" onclick="navBarCloseFunction()" class="btn-close nav-close" id="nav-close" aria-label="Close"></button>
         </div> 
-      </header>        
     </div>
-  <!-- End NavBar -->
+  </nav>
+<!-- End NavBar -->
 <!-- Start Home Page -->
     <div class="home container-3">
       <img src="static/images/prajjwal.png" alt="Prajjwal Subedi" class="home-image">
