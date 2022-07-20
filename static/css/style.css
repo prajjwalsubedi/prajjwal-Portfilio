@@ -15,25 +15,21 @@
     font-weight: 700;
     text-decoration: underline overline var(--secondary);
     color:#6244C5;
-    background-color: white;
     margin-bottom: 0px;
 }
 
 .nav-dot {
     font-weight: bolder;
     color: red;
-    background-color: white;
 }
 
 .nav-menu li a {
     color: #3e3d3d;
-    background-color: white;
 }
 
 .nav-menu li a:hover {
     color: #3e3d3d;
     text-decoration: underline;
-    background-color: white;
 }
 
 .nav-menu li a:active {
@@ -48,91 +44,10 @@
     text-decoration: none;
     color: var(--main);
     padding:  10px 32px 10px 32px;
-    background-color: white;
     float: left;
 }
 
-.mbl-menu-bar {
-    display: none;
-}
-.nav-close {
-    font-size: 1.35em;
-    color: black;
-    display: none;
-}
-.mbl-menu {
-    display: none;
-}
-.nav-bar-logo-menu {
-    display: flex;
-    flex-direction: row;
-}
-header {
-    align-items: center;
-}
-/* mobile navbar */
-.mbl-bar{
-    font-size: 30px;
-}
-@media (max-width: 878px) {
 
-    .logo-link {
-        float: left;
-        margin-left: 2px!important;
-    }
-    .menu-mbl {
-        display: flex;        
-    }
-    .nav-button {
-        display: none;
-    }
-    .nav-close {
-        display: none;
-    }
-    
-}
-@media (max-width: 768px) {
-    .logo-nav {
-        display: block;
-    }
-    .logo-link {
-        float: left;
-        margin-left: 2px!important;
-    }
-    
-    .menu-mbl {
-        display: none;
-        flex-direction: column;        
-    }
-
-    .menu-menu {
-        display: block;
-        flex-direction: column;
-    }
-    .nav-button {
-        display: none;
-    }
-    .mbl-bar {
-        display: block;
-    }
-    .mbl-menu-bar {
-        display: contents;
-    }
-    .nav-close {
-        display: none;
-    }
-    #menu-mbl {
-        border: 2px solid black;
-    }
-    .nav-bar-logo-menu {
-        display: flex;
-        flex-direction: column;
-    }
-    .nav-bar {
-        align-items: initial;
-    }
-
-}
  /* end of NavBar */
 
 
