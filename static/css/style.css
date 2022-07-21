@@ -15,30 +15,55 @@
     font-weight: 700;
     text-decoration: underline overline var(--secondary);
     color:#6244C5;
-    margin-bottom: 0px;
 }
 
 .nav-dot {
     font-weight: bolder;
     color: red;
 }
-
+#nav-menu {
+    font-size: 18px!important;
+    color: black!important;
+    
+}
+.menua {
+    text-align: center;
+    border: 2px solid var(--main);
+    border-radius: 16px;
+    margin-right: 5px;
+}
+.menua:hover{
+    color: white;
+    border: 3px solid white;
+    border-radius: 16px;
+    background-color: var(--secondary);
+    right: 37%;
+    transition: all .3s ease-in;
+}
 .nav-button {
     border: 2px solid var(--secondary);
+    background-color: white;
     border-radius: 18px;
     text-decoration: none;
     color: var(--main);
     padding:  10px 32px 10px 32px;
     float: left;
 }
-
-
+.nav-button:hover {
+    border: 2px solid var(--main);
+    background-color: var(--secondary);
+    border-radius: 18px;
+    text-decoration: none;
+    color: white;
+    padding:  10px 32px 10px 32px;
+    float: left;
+}
  /* end of NavBar */
 
 
 /* starts Home CSS */
 .home {
-    padding: 1% 5% 0 11%;
+    padding: 1% 5% 0 10%;
 }
 
 .home-myname {
@@ -116,8 +141,7 @@
 }
 
 .home-image {
-    max-width: 46.1%;
-    max-height: auto;
+    max-width: 45%;
     float:right;
     margin-top:0px;
     z-index: -1;
